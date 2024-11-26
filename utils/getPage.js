@@ -25,6 +25,7 @@ export const getPage = async (uri) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(params),
+    cache: "no-store",
   });
 
   const { data } = await response.json();
