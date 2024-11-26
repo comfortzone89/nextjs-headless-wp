@@ -99,7 +99,6 @@ export async function POST(request) {
           }
         `,
       }),
-      cache: "no-store",
     });
 
     const { data } = await response.json();
